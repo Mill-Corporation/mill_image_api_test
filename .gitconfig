@@ -1,4 +1,2 @@
-[init]
-    templateDir = template
 [core]
     hooksPath = hooks
