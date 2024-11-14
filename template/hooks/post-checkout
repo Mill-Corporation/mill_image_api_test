@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Starting post-checkout hook..."
+
+# 현재 저장소 위치 확인
+REPO_PATH=$(pwd)
+echo "Repository path: $REPO_PATH"
+
+# /home/pi/mvpc로 파일 복사
+cp -rf "$REPO_PATH"/* /home/pi/mvpc/
+echo "Files copied to /home/pi/mvpc/"
+
+# 권한 설정 (필요한 경우)
+chmod -R 755 /home/pi/mvpc/
+
+echo "Post-checkout hook completed"
