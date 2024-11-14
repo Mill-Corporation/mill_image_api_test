@@ -1,2 +1,6 @@
 [core]
     hooksPath = hooks
+[hook]
+    debugTrace = true
+[trace]
+    hook = true
